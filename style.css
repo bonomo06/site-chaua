@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'MyCustomFont';
+    src: url('fonts/Thermometer.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+nav a{
+    padding: 5% 1% 5% 1%;
+    cursor: pointer;
+}
+#navbar{
+    position: relative;
+    background-color: rgb(240, 126, 74, 255);
+}
+#naves{
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 4.5%;
+}
+#logo{
+    position: relative;
+    top: -10vh;
+    width: 8%;
+    height: auto;
+}
+#title1{
+    font-family:'MyCustomFont';
+    font-size: 3vw;
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+#colortitle{
+    color: rgb(32,102,68);
+}
+main{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 30% 90% 10%;
+}
+#bolonacontent{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: rgb(240, 126, 74, 255);
+    border-radius: 0 0 100em 100em;
+    /*border-radius: 0 0 80% 80%;*/
+    text-align: center;
+    font-size: -1vw;
+}
+#bolonacontent button{
+    background-color: #1c9461;
+    border-radius: 1em;
+    border: none;
+    width: 15%;
+    height: 6%;
+    margin-top: 3.5%;
+    cursor: pointer;
+}
+#textbutton{
+    color: #fff;
+}
+#img1{
+    grid-column: 1 / 2;
+    padding-left: 50%; 
+    width: 10%;
+    height: auto;
+    padding-left: 0%;
+}
+#img1 img{
+    width: 30vw;
+    height: 67vh;
+}
+#img2{
+    grid-column: 3 / 4;
+    justify-self: end;  
+    padding-right: 45%;
+    padding-top: 15%;
+}
+#img2 img{
+    width: 30vw;
+    height: 67vh;
+}
